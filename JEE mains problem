@@ -1,23 +1,23 @@
-import java.util.*;
-
-class Main {
+import java.util.Scanner;
+public class Main
+{
     public static void main(String[] args) {
-        Scanner s= new Scanner(System.in);
-        int[] ranks= new int[50];
-        int count=0;
-        System.out.println("Enter the number of Students:");
-        int n=s.nextInt();
-        System.out.println("Enter the Ranks:");
+        Scanner sc=new Scanner (System.in);
+        int c=0;
+        System.out.println("Enter the size of array:");
+        int n=sc.nextInt();
+        int [] arr = new int[n];
+        System.out.println("Number of Visiting \n");
         for(int i=0;i<n;i++){
-            ranks[i]=s.nextInt();
+            arr[i]=sc.nextInt();
         }
-        int current=ranks[0];
-        for(int i=1;i<n;i++){
-            if(ranks[i]<current){
-                current=ranks[i];
-                count++;
+        int large=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<large){
+                large=arr[i];
+                c++;
             }
         }
-        System.out.println("Count = "+ count);
+        System.out.println("Number of ranks cut in the list is :"+c);
     }
 }
