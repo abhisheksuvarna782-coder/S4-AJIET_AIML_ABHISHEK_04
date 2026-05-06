@@ -11,6 +11,11 @@ class Main {
         System.out.println("```````````````````````");
         m.get(102);
         System.out.println(m.get(102));
+        
+        System.out.println(m.containsKey(101));
+        
+        System.out.println(m.keySet());
+        
         m.clear();
         System.out.println(m);
      
