@@ -6,6 +6,10 @@ class Main {
        ai.add(20);
        ai.add(2);
        ai.size();
+       ai.remove(2);
+       ai.add(8888);
+       ai.add(8787);
+       ai.contains("abhi");
        
        System.out.println(ai);
        System.out.println(ai.size());
