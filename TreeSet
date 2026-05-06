@@ -2,10 +2,11 @@ import java.util.TreeSet;
 class Main {
     public static void main(String[] args) {
        TreeSet < Integer>ai=new TreeSet< >();
-       ai.add(2);
+     
        ai.add(20);
        ai.add(2);
-      
+       ai.add(1);
+      ai.add(20);
        
        System.out.println(ai);
        System.out.println(ai.size());
